@@ -1,4 +1,139 @@
 
 body {
-  background-color: red;
+  margin: 0;
+  background-color: rgb(243, 243, 243);  
+}
+
+.nav-bar {
+  background-color: white;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  margin: 0;
+  padding: 5px 0 5px 20px;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-link {
+  width: max-content;
+  margin: 0 40px 0 40px;
+  font-weight: bold;  
+}
+
+.opening-content-container {
+  background-color: rgb(213, 186, 69);
+  margin: 20px auto;
+  padding: 50px;
+  width: 60%;
+}
+
+.opening-headers {
+  margin: 20px 0 -10px 0;
+}
+
+.journey-container {
+  background-color: rgb(75, 156, 192);
+  margin: 100px auto;
+  padding: 50px;
+  width: 60%;
+}
+
+.projects-header {
+  margin: 0 auto 30px auto;
+  width: 60%;
+}
+
+.project-container {
+  color: rgb(243, 242, 240);
+  background-color: rgb(32, 36, 29);
+  padding: 10px 50px 50px 50px;
+  width: 60%;
+  margin: 0 auto 40px auto;
+}
+.project-title {
+  text-align: left;
+}
+
+.project-image-container {
+  display: flex; 
+  justify-content: center;
+}
+
+.project-image {
+  width: 60%;
+  height: 50%;
+}
+
+.project-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-link {
+  color: rgb(243, 242, 240);
+  margin: 20px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.footer {
+  height: 400px;
+}
+
+h2 {
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  
+  .title {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nav-link-container {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .opening-content-container {
+    margin-top: 100px;
+  }
+
+  ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
 }
