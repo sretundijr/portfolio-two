@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  background-color: rgb(243, 243, 243);  
+  background-color: rgb(243, 243, 243); 
 }
 
 .nav-bar {
@@ -13,6 +13,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.menu-btn-container {
+  display: none;
+}
+
+.small-screen {
+  display: none;
 }
 
 .title {
@@ -45,6 +53,7 @@ body {
 }
 
 .journey-container {
+  color: rgb(243, 242, 240);  
   background-color: rgb(75, 156, 192);
   margin: 100px auto;
   padding: 50px;
@@ -124,9 +133,41 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+
 @media only screen and (max-width: 800px) {
   .nav-bar {
     flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .menu-btn-container {
+    display: flex;
+    justify-content: center;
+    background-color: white; 
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .menu {
+    background-color: rgb(243, 243, 243);     
+    width: 40%;
+    height: 30px;
+  }
+
+  .nav-link-container {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: -10px;
+  }
+
+  .nav-link {
+    margin: 10px 0 10px 0;
   }
   
   .title {
@@ -134,22 +175,7 @@ a {
     text-align: center;
   }
 
-  .nav-link-container {
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
   .opening-content-container {
-    margin-top: 100px;
+   margin-top: 200px;
   }
-
-  ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-}
 }
