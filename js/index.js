@@ -14,15 +14,31 @@ function getElementId(id) {
   return document.getElementById(id);
 }
 
+function navContainer() {
+  return document.getElementsByClassName('nav-link-container');
+}
+
+function showMenu() {
+  navContainer()[0].style.display = 'block';
+  manageState.navHidden = false;
+}
+
+function hideMenu() {
+  navContainer()[0].style.display = 'none';
+  manageState.navHidden = true;
+}
+
+function showNavBar() {
+  navContainer()[0].style.display = 'flex';
+  manageState.navHidden = false;
+}
+
 function handleMenuBtnEvent() {
-  var navContainer = getElementId('toggle-nav');
   var menuBtn = getElementId('menu-btn');
   if (manageState.navHidden) {
-    navContainer.style.display = 'block';
-    manageState.navHidden = false;
+    showMenu();
   } else {
-    navContainer.style.display = 'none';
-    manageState.navHidden = true;
+    hideMenu();
   }
 }
 
@@ -41,7 +57,9 @@ function handleNavEvent() {
 window.addEventListener('resize', function (e) {
   manageState.screenWidth = e.target.window.innerWidth;
   if (manageState.screenWidth > 800) {
-    manageState.navHidden = true;
+    showNavBar();
+  } else {
+    hideMenu();
   }
 });
 
