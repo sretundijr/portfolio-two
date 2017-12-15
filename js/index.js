@@ -1,6 +1,7 @@
 
 var manageState = {
-  navHidden: true
+  navHidden: true,
+  screenWidth: window.innerWidth
 }
 
 function attachMenuButtonListener(element, callback) {
@@ -30,10 +31,19 @@ function handleNavEvent() {
 
   Array.from(navLinks).forEach(function (element) {
     element.addEventListener('click', function () {
-      handleMenuBtnEvent();
+      if (manageState.screenWidth <= 800) {
+        handleMenuBtnEvent();
+      }
     })
   });
 }
+
+window.addEventListener('resize', function (e) {
+  manageState.screenWidth = e.target.window.innerWidth;
+  if (manageState.screenWidth > 800) {
+    manageState.navHidden = true;
+  }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   attachMenuButtonListener(getElementId('menu-btn'), handleMenuBtnEvent);
