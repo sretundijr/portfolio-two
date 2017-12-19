@@ -2,6 +2,7 @@
 body {
   margin: 0;
   background-color: rgb(243, 243, 243); 
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .nav-bar {
@@ -42,9 +43,10 @@ body {
 }
 
 .opening-content-container {
-  background-color: rgb(213, 186, 69);
-  margin: 20px auto;
-  padding: 50px;
+  /* background-color: rgb(213, 186, 69); */
+  background-color: white;
+  margin: 100px auto;
+  padding: 20px 50px 50px 50px;
   width: 60%;
 }
 
@@ -52,9 +54,33 @@ body {
   margin: 20px 0 -10px 0;
 }
 
+.steve-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+}
+
+.who-content {
+  margin-top: 50px;
+  width: 500px;
+}
+
+.steve-img {
+  width: 30%;
+  height: 40%;
+  padding-top: 20px;
+}
+
+.corvette-img {
+  margin-top: -125px;
+  width: 55%;
+  height: 40%;
+}
+
 .journey-container {
-  color: rgb(243, 242, 240);  
-  background-color: rgb(75, 156, 192);
+  /* color: rgb(243, 242, 240);   */
+  /* background-color: rgb(75, 156, 192); */
+  background-color: white;
   margin: 100px auto;
   padding: 50px;
   width: 60%;
@@ -66,8 +92,9 @@ body {
 }
 
 .project-container {
-  color: rgb(243, 242, 240);
-  background-color: rgb(32, 36, 29);
+  /* color: rgb(243, 242, 240); */
+  /* background-color: rgb(32, 36, 29); */
+  background-color: white;
   padding: 10px 50px 50px 50px;
   width: 60%;
   margin: 0 auto 40px auto;
@@ -93,13 +120,14 @@ body {
 }
 
 .project-link {
-  color: rgb(243, 242, 240);
+  /* color: rgb(243, 242, 240); */
   margin: 20px;
 }
 
 .contact-container {
-  background-color: rgb(49, 101, 161);
-  color: rgb(243, 242, 240);  
+  /* background-color: rgb(49, 101, 161); */
+  /* color: rgb(243, 242, 240);   */
+  background-color: white;
   margin: 100px auto;
   padding: 50px;
   width: 60%;
@@ -116,7 +144,7 @@ body {
 }
 
 .footer {
-  height: 400px;
+  height: 100px;
 }
 
 h2 {
@@ -139,6 +167,27 @@ button {
   outline: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .steve-img-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;    
+  }
+
+  .who-content {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .steve-img {
+    width: 50%;
+  }
+
+  .corvette-img {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .nav-bar {
     flex-direction: column;
@@ -149,7 +198,7 @@ button {
     display: flex;
     justify-content: center;
     background-color: white; 
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 40px;
   }
 
@@ -176,6 +225,6 @@ button {
   }
 
   .opening-content-container {
-   margin-top: 200px;
+   margin-top: 100px;
   }
 }
