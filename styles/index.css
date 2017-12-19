@@ -43,7 +43,6 @@ body {
 }
 
 .opening-content-container {
-  /* background-color: rgb(213, 186, 69); */
   background-color: white;
   margin: 100px auto;
   padding: 20px 50px 50px 50px;
@@ -78,8 +77,6 @@ body {
 }
 
 .journey-container {
-  /* color: rgb(243, 242, 240);   */
-  /* background-color: rgb(75, 156, 192); */
   background-color: white;
   margin: 100px auto;
   padding: 50px;
@@ -92,8 +89,6 @@ body {
 }
 
 .project-container {
-  /* color: rgb(243, 242, 240); */
-  /* background-color: rgb(32, 36, 29); */
   background-color: white;
   padding: 10px 50px 50px 50px;
   width: 60%;
@@ -120,13 +115,10 @@ body {
 }
 
 .project-link {
-  /* color: rgb(243, 242, 240); */
   margin: 20px;
 }
 
 .contact-container {
-  /* background-color: rgb(49, 101, 161); */
-  /* color: rgb(243, 242, 240);   */
   background-color: white;
   margin: 100px auto;
   padding: 50px;
