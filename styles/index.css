@@ -102,12 +102,11 @@ body {
 
 .project-image-container {
   display: flex; 
-  justify-content: center;
 }
 
 .project-image {
-  width: 60%;
-  height: 50%;
+  width: 75%;
+  height: 60%;
 }
 
 .project-link-container {
@@ -141,6 +140,11 @@ body {
   height: 100px;
 }
 
+p {
+  line-height: 1.5;
+}
+
+/* overrides */
 h2 {
   display: block;
   -webkit-margin-before: 0;
@@ -212,7 +216,8 @@ button {
   }
 
   .nav-link {
-    margin: 10px 0 10px 0;
+    flex: none;
+    margin: 20px auto 20px auto;
   }
   
   .title {
@@ -223,4 +228,15 @@ button {
   .opening-content-container {
    margin-top: 100px;
   }
+
+  /* overrides */
+  ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+  } 
 }
