@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
 }
 
 .menu-btn-container {
@@ -184,6 +186,7 @@ button {
   .nav-bar {
     flex-direction: column;
     padding-bottom: 50px;
+    align-items: stretch;
   }
 
   .menu-btn-container {
