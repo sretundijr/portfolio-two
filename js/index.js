@@ -54,6 +54,21 @@ function handleNavEvent() {
   });
 }
 
+function smoothScrolling() {
+  $('a').on('click', function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
+        window.location.hash = hash;
+      });
+    }
+  });
+}
+
 window.addEventListener('resize', function (e) {
   manageState.screenWidth = e.target.window.innerWidth;
   if (manageState.screenWidth > 800) {
@@ -66,4 +81,5 @@ window.addEventListener('resize', function (e) {
 document.addEventListener('DOMContentLoaded', function () {
   attachMenuButtonListener(getElementId('menu-btn'), handleMenuBtnEvent);
   handleNavEvent();
+  smoothScrolling();
 });
