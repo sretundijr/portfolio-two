@@ -62,7 +62,6 @@ body {
 }
 
 .who-content {
-  margin-top: 50px;
   width: 500px;
 }
 
@@ -70,19 +69,6 @@ body {
   width: 30%;
   height: 40%;
   padding-top: 20px;
-}
-
-.corvette-img {
-  margin-top: -125px;
-  width: 55%;
-  height: 40%;
-}
-
-.journey-container {
-  background-color: white;
-  margin: 100px auto;
-  padding: 50px;
-  width: 60%;
 }
 
 .projects-header {
@@ -122,7 +108,7 @@ body {
 .contact-container {
   background-color: white;
   margin: 100px auto;
-  padding: 50px;
+  padding: 20px 50px 20px 50px;
   width: 60%;
 }
 
@@ -226,7 +212,7 @@ button {
   }
 
   .opening-content-container {
-   margin-top: 100px;
+   margin-top: 150px;
   }
 
   /* overrides */
