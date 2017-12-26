@@ -53,6 +53,8 @@ body {
 
 .opening-headers {
   margin: 20px 0 20px 0;
+  color: rgb(236, 51, 36);
+  text-align: center;
 }
 
 .steve-img-container {
@@ -74,6 +76,8 @@ body {
 .projects-header {
   margin: 0 auto 30px auto;
   width: 60%;
+  color: rgb(236, 51, 36);
+  text-align: center;
 }
 
 .project-container {
@@ -84,10 +88,13 @@ body {
 }
 .project-title {
   text-align: left;
+  color: rgb(236, 51, 36);
+  text-align: center;  
 }
 
 .project-image-container {
   display: flex;
+  justify-content: center;
   margin: 20px 0 20px 0; 
 }
 
@@ -111,6 +118,11 @@ body {
   margin: 100px auto;
   padding: 20px 50px 20px 50px;
   width: 60%;
+}
+
+.contact-header {
+  color: rgb(236, 51, 36);
+  text-align: center;
 }
 
 .contact-content {
